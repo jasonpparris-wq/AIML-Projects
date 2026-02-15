@@ -71,3 +71,4 @@ jobs:
         run: |
           az ml environment create --file ${{ github.workspace }}/${{ inputs.environment_file }} --resource-group ${{ inputs.resource_group }} \
                                   --workspace-name ${{ inputs.workspace_name }} --build-context ${{ github.workspace }}/${{ inputs.dockerfile-location }}
+
